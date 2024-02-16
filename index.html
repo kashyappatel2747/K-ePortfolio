@@ -76,6 +76,20 @@
       .leftSection {
         font-size: 3rem;
       }
+      
+      .leftSection .buttons{
+        padding: 50px 0;
+      }
+      
+      .leftSection .btn{
+        padding: 12px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
 
       .rightSection img {
         /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
@@ -86,6 +100,10 @@
         color: rgb(150, 93, 204);
       }
 
+      .text-gray{
+        color: gray;
+      }
+      
       #element{
         color: rgb(150, 93, 204);;
       }
@@ -93,11 +111,77 @@
       .secondSection{
         max-width: 80vw;
         margin: auto;
+        height: 80vh;
       }
 
       .secondSection h1{
         font-size: 1.9rem;
       }
+
+      .secondSection .box{
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-around; */
+      }
+
+      .secondSection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 120px;
+      }
+
+      .image-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      
+      .vertical-title{
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+      
+      .vertical-desc{
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      .footer{
+        background-color: #0e0e1a;
+        /* height: 233px; */
+      }
+
+      .footer{
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul{
+        list-style: none;
+      }
+
+      .footer > div{
+        width: 223px;
+      }
+
+      footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12x 0;
+      }
+
     </style>
   </head>
   <body>
@@ -125,6 +209,10 @@
           Hi, My name is <span class="purple">Kashyap</span><br>
           <div>and I am a</div>
           <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
         </div>
         <div class="rightSection">
           <img src="./developer.png" alt="" />
@@ -132,13 +220,90 @@
       </section>
 <hr>
       <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
         <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img src="./dev.png" alt="" class="image-top">
+            <div class="vertical-title">
+              HTML developer (2021-2022)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur accusamus quibusdam mollitia ex incidunt quae numquam blanditiis, recusandae aliquid voluptatem.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="./dev.png" alt="" class="image-top">
+            <div class="vertical-title">
+              HTML developer (2021-2022)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur accusamus quibusdam mollitia ex incidunt quae numquam blanditiis, recusandae aliquid voluptatem.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="./dev.png" alt="" class="image-top">
+            <div class="vertical-title">
+              HTML developer (2021-2022)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur accusamus quibusdam mollitia ex incidunt quae numquam blanditiis, recusandae aliquid voluptatem.
+            </div>
+          </div>
+          <div class="vertical">
+
+            <img src="./dev.png" alt="" class="image-top">
+            <div class="vertical-title">
+              HTML developer (2021-2022)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur accusamus quibusdam mollitia ex incidunt quae numquam blanditiis, recusandae aliquid voluptatem.
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Harry's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        CopyRights&#169 | All rights reserved
+      </div>
+    </footer>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
-        strings: ["Web Developer", "Programmer"],
+        strings: ["Web Developer", "Programmer", "Problem Solver"],
         typeSpeed: 50,
       });
     </script>
