@@ -13,6 +13,7 @@ header {
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 10;
 }
 
 nav {
@@ -143,6 +144,33 @@ main hr {
   margin: 0 120px;
 }
 
+.sbox{
+  display: flex;
+  flex-direction: column;
+  margin: 56px 0;
+}
+
+.sbox h2{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.svertical ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.skill-type ul{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(2, 16, 46);
+  border-radius: 32px;
+  padding: 20px;
+}
+
+
+
 .image-top {
   width: 23px;
   position: relative;
@@ -169,8 +197,8 @@ main hr {
   /* background-color: rgb(4, 4, 36); */
   background-color: rgb(255, 255, 255);
   opacity: 0.2;
-  padding: 10px;
   display: flex;
+  padding: 10px 0;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
